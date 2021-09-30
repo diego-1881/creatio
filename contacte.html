@@ -1,0 +1,108 @@
+<!doctype html>
+<html class="no-js" lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/lightbox.min.css"/>
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <header id="header"></header>
+
+  <section class="page-header">
+    <div class="container">
+      <div class="row ">
+        <div class="col-6 align-self-center">
+          <h2>Contacte</h2>
+        </div>
+        <div class="col-6">
+          <div class="page-header-image" style="background:url('./assets/img/header-contacte.jpg');background-size:cover;"></div>
+        </div>
+        <div class="share-box text-center">
+          <p>Compartir</p>
+          <a href="#" class="share-btn"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="single-content content-contacte pt-3">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-lg-9">
+          <h3>TIPUS DE CONSULTA:</h3>
+          <div class="d-flex justify-content-between">
+            <a href="javascript:void(0)" class="form-btn active" value="Collaborative"><span>Collaborative<br /> Basic Research</span></a>
+            <a href="javascript:void(0)" class="form-btn" value="Preclinical"><span>Preclinical<br /> Validation</span></a>
+            <a href="javascript:void(0)" class="form-btn" value="Producció"><span>Producció ATMPs</span></a>
+            <a href="javascript:void(0)" class="form-btn" value="Assessoria"><span>Assessoria</span></a>
+            <a href="javascript:void(0)" class="form-btn" value="Treball"><span>Treball</span></a>
+          </div>
+
+          <form class="contacte-form">
+            <input type="text" id="cnom" name="fname" placeholder="Nom i cognorms">
+            <input type="text" id="cemail" name="lname" placeholder="E-mail">
+            <input type="text" id="ctelefon" name="lname" placeholder="Telèfon">
+            <textarea rows="6" class="textarea-message" id="cmessage" name="lname" placeholder="Escriu aquí el teu comentari…"></textarea>
+            <input class="form-btn submit" type="submit" value="Enviar">
+          </form>
+        </div>
+
+        <div class="col-lg-3 align-self-end pb-5">
+          <label for="file-upload" class="custom-file-upload">
+            Drop files here  <span class="upload-cross"></span>
+          </label>
+          <input id="file-upload" type="file"/>
+          <label for="file-upload" class="custom-file-upload">
+            Drop files here  <span class="upload-cross"></span>
+          </label>
+          <input id="file-upload" type="file"/>
+          <p>Només s'admeten arxius PDF amb una grandària màxima per arxiu de 2MB.</p>
+        </div>
+
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+  </section>
+
+
+  <footer id="footer"></footer>
+
+  <script src="assets/js/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/plugins.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/lightbox.min.js"></script>
+
+  <script>
+    $(function(){
+      $("#header").load("includes/header.html", function() {
+        // $('li.nav-item-talent').addClass('active');
+      });
+      $("#footer").load("includes/footer.html");
+    });
+  </script>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>

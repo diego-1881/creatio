@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <title>Creatio</title>
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 
   <link rel="stylesheet" href="assets/css/normalize.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -13,22 +13,34 @@
   <link rel="stylesheet" href="assets/css/main.css">
 
   <meta name="theme-color" content="#fafafa">
+
+  <script type="text/javascript" src="https://platform-api.sharethis.com/js/sharethis.js#property=61e1865ac1dc91001d05f918&product=sticky-share-buttons" async="async"></script>
 </head>
 
 <body>
 
   <header id="header"></header>
 
-  <section class="carousel">
+  <div class="share-box-container" id="sticky">
+    <div class="share-box text-center">
+      <p>Compartir</p>
+      <a href="#" class="share-btn"></a>
+    </div>
+    <div class="sharethis-sticky-share-buttons"></div>
+  </div>
 
-    <div class="container pt-0 pb-0 share-box-container">
-      <div class="share-box text-center">
-        <p>Compartir</p>
-        <a href="#" class="share-btn"></a>
+  <section class="content carousel dark">
+    <!-- <div class="container floating-container">
+      <div class="share-box-container">
+        <div class="share-box text-center">
+          <p>Compartir</p>
+          <a href="#" class="share-btn"></a>
+        </div>
       </div>
-    </div><!-- container share-box-container -->
+    </div> -->
 
     <div class="owl-carousel owl-carousel-header">
+
       <div class="item">
         <div class="owl-carousel-content">
           <div class="owl-carousel-image-container" style="background-image:url(./assets/img/home-slider-1.jpg);background-size:cover;"></div>
@@ -42,17 +54,7 @@
         <div class="owl-carousel-content">
           <div class="owl-carousel-image-container" style="background-image:url(./assets/img/home-slider-1.jpg);background-size:cover;"></div>
           <div class="float-left">
-            <h2>Centre de Producció i Validació de teràpies avançades</h2>
-            <a class="btn btn-primary" href="el-centre.html" role="button">LLEGIR MÉS</a>
-          </div>
-        </div>
-        <div class="owl-carousel-background"></div>
-      </div>
-      <div class="item">
-        <div class="owl-carousel-content">
-          <div class="owl-carousel-image-container" style="background-image:url(./assets/img/home-slider-1.jpg);background-size:cover;"></div>
-          <div class="float-left">
-            <h2>Centre de Producció i Validació de teràpies avançades</h2>
+            <h2>Oferim solucions basades en Teràpies Avançades</h2>
             <a class="btn btn-primary" href="el-centre.html" role="button">LLEGIR MÉS</a>
           </div>
         </div>
@@ -62,7 +64,7 @@
         <div class="owl-carousel-content">
           <div class="owl-carousel-image-container" style="background-image:url(./assets/img/home-slider-1.jpg);background-size:cover;"></div>
           <div class="float-left">
-            <h2>Centre de Producció i Validació de teràpies avançades</h2>
+            <h2>Fem recerca en les malalties neurodegeneratives: Huntington i Parkinson</h2>
             <a class="btn btn-primary" href="el-centre.html" role="button">LLEGIR MÉS</a>
           </div>
         </div>
@@ -72,74 +74,76 @@
     <div class="carousel-header-background"></div>
   </section><!-- carousel -->
 
-  <section class="centre-de-produccio ">
-    <div class="bg-pacific-light-blue pt-5">
+  <section class="content centre-de-produccio dark">
+    <div class="bg-pacific-light-blue ">
       <div class="container">
         <div class="row">
-          <div class="col col-lg-5">
+          <div class="col-12 col-lg-6">
             <h2>Creatio és el Centre de Producció i Validació de teràpies avançades a la Facultat de Medicina i Ciències de la Salut de la Universitat de Barcelona.</h2>
           </div>
-          <div class="col col-lg-2"></div>
-          <div class="col col-lg-5">
+          <div class="col-12 col-lg-1"></div>
+          <div class="col-12 col-lg-5">
             <p><a href="qui-som.html">La nostra missió</a> és oferir solucions basades en teràpies avançades amb l’objectiu d’augmentar l’eficiència del sistema sanitari i la qualitat de vida de la societat.</p>
             <p><a href="serveis.html">A Creatio oferim</a> solucions basades en teràpies avançades amb l’objectiu d’incrementar l’eficiència del sistema sanitari i millorar la qualitat de vida de la  societat. </p>
-            <p>Encara avui dia, existeixen nombroses malalties que no estan tractades d'una manera efectiva i que la seva teràpia encara no és prou bona per la qualitat de vida pel pacient. És per això que des de Creatio, <strong>contribuïm a ajudar als centres públics de salut i a les empreses privades de salut a assolir un repte</strong>, un estímul per buscar alternatives als tractaments convencionals, un nou desafiament per apostar per les teràpies avançades.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="serveis bg-pacific-blue">
+  <section class="content serveis bg-pacific-blue light">
     <div class="container">
 
-      <div class="row">
-        <div class="col">
+      <div class="row pb-5">
+        <div class="col-12 pb-4">
           <hr class="white" />
           <h2 class="title">Serveis</h2>
         </div>
       </div><!-- /.row -->
 
       <div class="row">
-        <div class="col col-lg-4">
+        <div class="col-12 col-lg-4">
           <div class="serveis-shape-box text-center d-flex align-items-center">
             <div>
+              <span class="serveis-shape-number">1</span>
               <img src="./assets/img/serveis-collaboracions.png" width="104" height="86"/>
-              <p>Col·laboracions en recerca bàsica sobre malalties neuro degeneratives</p>
+              <p><a href="collaborative-basic-research.html">Col·laboracions en recerca bàsica sobre malalties neuro degeneratives</a></p>
             </div>
-            <a href="collaborative-basic-research.html">més info</a>
+            <a class="serveis-mes-info" href="collaborative-basic-research.html">més info</a>
           </div>
         </div>
         <div class="col col-lg-4">
           <div class="serveis-shape-box text-center d-flex align-items-center">
             <div class="marginb-3">
+              <span class="serveis-shape-number">2</span>
               <img src="./assets/img/serveis-estudis.png" width="106" height="115"/>
-              <p>Estudis Preclínics regulatoris</p>
+              <p><a href="collaborative-basic-research.html">Estudis Preclínics regulatoris</a></p>
             </div>
-            <a href="preclinical-validation.html">més info</a>
+            <a class="serveis-mes-info" href="preclinical-validation.html">més info</a>
           </div>
         </div>
-        <div class="col col-lg-4">
+        <div class="col-12 col-lg-4">
           <div class="serveis-shape-box text-center d-flex align-items-center">
             <div>
+              <span class="serveis-shape-number">3</span>
               <img src="./assets/img/serveis-produccio.png" width="89" height="90"/>
-              <p>Producció de teràpies avançades</p>
+              <p><a href="collaborative-basic-research.html">Producció de teràpies avançades</a></p>
             </div>
-            <a href="produccio-atmps.html">més info</a>
+            <a class="serveis-mes-info" href="produccio-atmps.html">més info</a>
           </div>
         </div>
       </div><!-- /.row -->
 
       <div class="row">
-        <div class="col col-serveis-assesoria">
+        <div class="col-12 col-serveis-assesoria">
           <div class="box text-center">
             <div></div>
             <div>
               <img src="./assets/img/serveis-assesoria.png" width="59" height="56"/>
-              <p>Assesoria</p>
+              <p><a href="collaborative-basic-research.html">Assesoria</a></p>
             </div>
             <div>
-              <a href="assesoria.html">més info</a>
+              <a class="serveis-mes-info" href="assesoria.html">més info</a>
             </div>
           </div>
         </div>
@@ -149,11 +153,11 @@
   </section>
 
 
-  <section class="carousel-section carousel-testimonis bg-light-blue">
+  <section class="carousel-section carousel-testimonis bg-light-blue dark" style="display: none;">
 
     <div class="container pb-4">
       <div class="row">
-        <div class="col">
+        <div class="col-12">
           <hr class="dark-blue" />
           <h2 class="title">Testimonis Casos d'èxit</h2>
         </div>
@@ -168,7 +172,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -179,7 +183,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -190,7 +194,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -201,7 +205,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -212,7 +216,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -223,7 +227,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -234,7 +238,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -245,7 +249,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -256,7 +260,7 @@
             <div class="cita">
               <h3>Dr. Manel Juan Otero</h3>
               <p>Cap de la Plataforma d’Immunoteràpia.<br />
- Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
+Unitat d’Immunologia Clínica de l’Hospital Sant Joan de Déu Barcelona i l’Hospital Clínic</p>
               <img src="./assets/img/testimonis-foto.png" width="154" height="154"/>
             </div>
           </div>
@@ -273,7 +277,7 @@
 
       <div class="row justify-content-between">
 
-        <div class="col-lg-8">
+        <div class="col-12 col-md-8 col-lg-8">
 
           <div class="container pb-5">
             <div class="row">
@@ -332,7 +336,7 @@
 
         </div><!-- /.lg-8 -->
 
-        <div class="col-lg-4 ml-auto">
+        <div class="col-12 col-md-4 col-lg-4 ml-auto">
 
           <div class="container  pb-5">
             <div class="row">
@@ -347,12 +351,12 @@
           <div class="talent-box">
 
             <div class="talent-box-header">
-              Postdoctoral position in bioinformatics and machine learning
+              Postdoctoral position in bioinformatics andmachine learning
             </div>
             <div class="talent-box-content">
               <p>La posició de bioinformàtic/a és oferta per l'Àrea de Recerca de Creatio, per treballar en estreta col·laboració amb el grup de la Dra. Petia Radeva CVMLUB de la Universitat de Barcelona i la Dra. Marta Melé del BCN-CNS. </p>
               <a href="javascript:void(0)">Descarregar oferta</a>
-              <p class="referencia">Referència: CRE21-01 </br>
+              <p class="referencia">Referència: CRE21-01</br>
               Termini: 15 d’abril de 2021</p>
             </div>
           </div>
